@@ -1,0 +1,9 @@
+package ex_03;
+import java.util.ArrayList;
+
+public class Ex03 {
+    public void printArray(ArrayList<String> myArray) {
+        for (int i = 0; i < myArray.size(); i++)
+            System.out.println(myArray.get(i));
+    }
+}
