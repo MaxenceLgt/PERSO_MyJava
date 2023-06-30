@@ -1,7 +1,7 @@
 package ex_06;
 
 public class Ex06 {
-    public void sequence(int nbr) {
+    public static void sequence(int nbr) {
         String sequence = "1";
         StringBuilder nextSequence = null;
         int count = 0;
