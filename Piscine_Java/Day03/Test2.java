@@ -3,16 +3,11 @@ import planet.*;
 import Day03.Astronaut;
 public class Test2 {
     public static void main (String[] av) {
-        chocolate.Mars snack = new chocolate.Mars();
-        planet.Mars rock = new planet.Mars("Viking 1");
-        Astronaut hibito = new Astronaut("Hibito");
-        Astronaut miyata = new Astronaut("Miyata");
+        planet.Mars titi = new planet.Mars ("Here and there");
+        planet.Mars toto = new planet.Mars ("Up");
+        planet.moon.Phobos phobos1 = new planet.moon.Phobos(titi,"Alpha 3");
 
-        System.out.println(snack.getId());
-        System.out.println(rock.getLandingSite());
-        miyata.doActions(rock);
-        System.out.println(miyata.getDestination());
-        hibito.doActions();
-        hibito.doActions(snack);
+        new planet.moon.Phobos(toto, "Beta 1");
+        System.out.println(phobos1.getLandingSite());
     }
 }
