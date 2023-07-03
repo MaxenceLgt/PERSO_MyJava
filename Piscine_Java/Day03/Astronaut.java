@@ -1,5 +1,7 @@
 package Day03;
 
+import planet.Mars;
+
 public class Astronaut {
     private String name = "";
     private int snacks = 0;
@@ -28,5 +30,23 @@ public class Astronaut {
 
     public int getSnacks() {
         return snacks;
+    }
+
+    public void doActions() {
+        System.out.println(name + ": Nothing to do.");
+        if (destination == null)
+            System.out.println(name + ": I may have done nothing, but I have " + snacks + " Mars to eat at least !");
+    }
+
+    public void doActions(Object marsObject) {
+        if (marsObject instanceof planet.Mars) {
+            System.out.println(name + ": Started a mission");
+            destination = ((planet.Mars) marsObject).getLandingSite();
+        } else if (marsObject instanceof  chocolate.Mars) {
+            System.out.println(name + ": Thanks for this mars number " + ((chocolate.Mars) marsObject).getId());
+            snacks += 1;
+        }
+        if (destination == null)
+            System.out.println(name + ": I may have done nothing, but I have " + snacks + " Mars to eat at least !");
     }
 }
