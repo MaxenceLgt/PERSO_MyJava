@@ -45,6 +45,9 @@ public class Astronaut {
         } else if (marsObject instanceof  chocolate.Mars) {
             System.out.println(name + ": Thanks for this mars number " + ((chocolate.Mars) marsObject).getId());
             snacks += 1;
+        } else if (marsObject instanceof planet.moon.Phobos) {
+            System.out.println(name + ": Started a mission");
+            destination = ((planet.moon.Phobos) marsObject).getLandingSite();
         }
         if (destination == null)
             System.out.println(name + ": I may have done nothing, but I have " + snacks + " Mars to eat at least !");

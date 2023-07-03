@@ -2,6 +2,8 @@ import chocolate.*;
 import planet.*;
 import Day03.Astronaut;
 import Day03.Team;
+import planet.moon.Phobos;
+
 public class Test2 {
     public static void main (String[] av) {
         Astronaut mutta = new Astronaut("Mutta");
@@ -18,5 +20,8 @@ public class Test2 {
         spaceBro.showMembers();
         spaceBro.remove(hibito);
         System.out.println(spaceBro.countMembers());
+
+        spaceBro.doActions();
+        spaceBro.doActions(titi);
     }
 }

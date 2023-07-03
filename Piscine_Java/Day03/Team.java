@@ -49,4 +49,14 @@ public class Team {
                 System.out.print(",");
         }
     }
+
+    public void doActions () {
+        System.out.println(teamName + ": Nothing to do.");
+    }
+
+    public void doActions(Object marsObject) {
+        for (int i = 0; i < astroList.size(); i++) {
+            astroList.get(i).doActions(marsObject);
+        }
+    }
 }
