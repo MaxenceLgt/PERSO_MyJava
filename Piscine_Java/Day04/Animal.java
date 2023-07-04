@@ -1,4 +1,3 @@
-package Day04;
 public class Animal {
 
     private String name;
