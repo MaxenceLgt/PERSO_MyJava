@@ -8,5 +8,7 @@ public class Example {
         willy.status();
         titi.layEgg();
         System.out.println(titi.getEggsCount());
+        willy.eat(titi);
+        willy.eat(willy);
     }
 }
