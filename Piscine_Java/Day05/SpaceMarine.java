@@ -45,11 +45,7 @@ abstract class SpaceMarine extends Unit {
     }
 
     @Override public void recoverAP() {
-        if (this.ap < 48) {
-            this.ap += 2;
-        } else {
-            this.ap = 50;
-        }
+        this.ap += 2;
         super.recoverAP();
     }
 }

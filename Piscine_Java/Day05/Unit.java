@@ -10,6 +10,18 @@ abstract class Unit implements Fighter {
         ap = unitAp;
     }
 
+    @Override public String getName() {
+        return name;
+    }
+
+    @Override public int getAp() {
+        return ap;
+    }
+
+    @Override public int getHp() {
+        return hp;
+    }
+
     @Override public void receiveDamage(int nbDamage) {
         if (hp > 0)
             hp -= nbDamage;
@@ -24,10 +36,9 @@ abstract class Unit implements Fighter {
     }
 
     @Override public void recoverAP() {
-        if (ap < 50 && hp > 0) {
-            if (ap <= 43)
-                ap += 7;
-            else {
+        if (hp > 0) {
+            ap += 7;
+            if (ap > 50) {
                 ap = 50;
             }
         }
