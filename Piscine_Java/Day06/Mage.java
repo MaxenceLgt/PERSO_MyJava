@@ -1,4 +1,5 @@
 public class Mage extends Character {
+
     protected Mage (String mageName) {
         super(mageName, "Mage");
         this.life = 70;

@@ -1,4 +1,5 @@
 public class Warrior extends Character {
+
     protected Warrior(String warriorName) {
         super(warriorName, "Warrior");
         this.life = 100;
